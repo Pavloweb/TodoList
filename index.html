@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/datatables.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/datatables.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>Todo list</title>
+    </head>
+    <body>
+        <div class="form-section mb-4 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xl-4 col-md-12 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Додати таск</h4>
+                                <form name="addTask">
+                                    <label for="title"></label>
+                                    <input type="text" name="title" id="title" class="mb-2 form-control" placeholder="Заголовок таску">
+                                    <label for="body"></label>
+                                    <textarea name="body" placeholder="Опис таску" class="mb-2 form-control" id="body" rows="3"></textarea>
+                                    <label id="priority"></label>
+                                    <select name="priority" class="form-control mb-2" id="priority">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                      </select>
+                                    <button class="w-100 btn btn-primary" type="submit">Додати таск</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-list">
+            <div class="container">
+                <div class="table-responsive-md"></div>
+                    <table id="table-task" class="table table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="th-sm">Заголовок таску</th>
+                                <th class="th-sm">Опис таску</th>
+                                <th class="th-sm">Пріоритет</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
