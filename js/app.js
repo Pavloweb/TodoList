@@ -8,7 +8,7 @@ $(document).ready(function () {
     form.addEventListener('submit', OnFormSubmit);
     table.addEventListener('click', OnDelete);
     search.addEventListener('keyup', tableSearch);
-    
+
     function OnFormSubmit(e) {
         e.preventDefault();
         const titleValue = inputTitle.value;
